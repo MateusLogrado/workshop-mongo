@@ -1,9 +1,6 @@
 package com.jelly.workshopmongo.service;
 
-<<<<<<< HEAD
 import java.util.List;
-=======
->>>>>>> 3890848868d304e55500bb8b3862a7ec75c25843
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,12 +21,9 @@ public class PostService {
 		return obj.orElseThrow(() -> new ObjectNotFoundException("Objeto não encontrado"));
 	}
 
-<<<<<<< HEAD
+
 	public List<Post> findByTitle(String text){
-		return repo.findByTitleContainingIgnoreCase(text);
+		return repo.findByTitle(text);
 	}
-=======
-	
->>>>>>> 3890848868d304e55500bb8b3862a7ec75c25843
 	
 }
